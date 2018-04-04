@@ -6,6 +6,8 @@ from django.contrib.contenttypes.fields import GenericRelation
 from django.contrib.contenttypes.models import ContentType
 from phonenumber_field.modelfields import PhoneNumberField
 
+class Category(models.Model):
+
 class Ad(models.Model):
 	title = models.CharField(max_length=255)
 	description = models.TextField(blank=True, null=True)
